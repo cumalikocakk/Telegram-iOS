@@ -83,8 +83,8 @@ jobs:
           release_name: Telegram ${{ env.APP_VERSION }} (${{ env.BUILD_NUMBER }})
           body: |
             An unsigned build of Telegram for iOS ${{ env.APP_VERSION }} (${{ env.BUILD_NUMBER }})
-          draft: false
-          prerelease: false
+          draft: true
+          prerelease: true
 
       - name: Upload Release IPA
         id: upload-release-ipa 
